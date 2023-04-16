@@ -50,3 +50,21 @@
 - 객체지향 : 책임이 여러 객체로 적절히 분산 되어 있는 방식
 	- High cohesion & Loose coupling(강한 응집도 & 낮은 결합도)
 	- 어떠한 변경이 생겼을 때 다른 곳에 영향을 미치지 않는다 -> 유지보수와 관련!
+
+## HTTP
+- Server와 Client가 웹에서 데이터를 주고 받기 위한 프로토콜(규약)
+- 특징(불특정 다수와 통신하기 위해)
+	- 클라이언트 <-> 서버 모델
+	- 무상태 프로토콜(Stateless) : 서버가 클라이언트 상태를 유지하지 않음 / 해결책 : Keep-Alive 사용
+	- 비연결성(Connectionless) : 서버가 클라이언트 요청에 대해 응답을 마치면 연결을 끊어버림 / 해결책 : COOKIE(client에 정보 저장), SESSION(server에 정보 저장), JWT
+- 응답코드
+	- 2xx : 성공
+	- 3xx : 리다이렉션 
+	- 4xx : 클라이언트 에러
+	- 5xx : 서버 에러
+
+- 헤더 
+	- Content-Type
+	- Accept
+	- Cookie
+	- Authorization
