@@ -120,4 +120,20 @@
 	> 주차시스템 -> parkable <- 자동차 = extends / 비행기 = implements
 
 ## 입출력(Input & Output)
-- File / Keyboard/ Network -> Input(byte단위로 읽는다)
+1. File / Keyboard/ Network -> 
+	> [Input : 입력 받는 역할을 하는 것 / 공통적인 class를 추상화(상속)(byte단위로 읽는다)]
+2. 객체 생성 (변수, 데이터 타입) ->
+3. Business Logic(DB) ->
+4. Output ->
+5. File / Console / Network
+- Byte VS Character
+	- Byte단위(Data 통신)
+		- OutputStream // InputStream
+		- [상속]
+		- [주Stream] FileOuputStream / FilterOuputsTream // FileInputStream
+		- [보조Stream] BufferedOutputStream
+	- Char단위(Text)
+		- Reader // Writer
+		- FileReader / BufferedReader // InputTreadReader
+
+
