@@ -119,3 +119,5 @@
 - 추상 class가 확장성이 떨어지면 사용 : new 사용 x / Instance화 시키지 못하는 것 / Memory에 객체 생성 x
 	> 주차시스템 -> parkable <- 자동차 = extends / 비행기 = implements
 
+## 입출력(Input & Output)
+- File / Keyboard/ Network -> Input(byte단위로 읽는다)
