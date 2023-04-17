@@ -68,3 +68,19 @@
 	- Accept
 	- Cookie
 	- Authorization
+
+## AWT(Abstract Window Toolkit)
+- GUI를 구현하기 위함
+	- Component(GUI 기능을 가지는 Class / Button, Checkbox)와 Container(Component들을 배치할 수 있는 Component / Frame)들을 가진 패키지
+	- 운영체제에 종속적이지 않음
+
+## JVM < JRE < JDK 
+- JDK(Java Development Kit) : javoc, debugging, jar
+	- Java Compile이라는 기능을 거쳐 기계가 이해할 수 있는 형태로 저장하는 기능 포함
+	- Java 개발을 위한 필수적 도구들이 들어가 있다.
+
+- JRE(Java Runtime Environment) : java, javaw, library
+	- Java가 구동되기 위한 실행 환경 제공
+
+- JVM(Java Virtual Machine) : just in time compiler
+- Source Code < JVM(Java) < 운영체제(Window, Linux, OS) < H/W(Computer)
