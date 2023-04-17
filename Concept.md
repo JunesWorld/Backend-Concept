@@ -1,9 +1,38 @@
 # Backend-Concept
 
-## Install Tomcat
+## Internet vs internet
+- internet : Network의 집합
+- Internet : Header 내용이 같아 Data 통신이 가능 (거의 모든 Network의 Header는 같다)
+
+## Packet = Header + Body
+- Header : TCP/IP에서 정해 놓은 byte로 Data가 들어가 있고 이것으로 Data 통신
+- Body(Data) : 응답 Body 만드는 것 (=Web programming)
+
+## WWW(World Wide Web)
+- HTTP가 거미줄 처럼 이어져 있는 것
+- 문서끼리 연결되어 있다 = 프로토콜
+	> naver -> news -> article
+
+## URL(Unified Resources Location)
+- 접근프로토콜://[IP주소] or [Domain 이름]/문서 경로/문서 이름
+	> http://[192.168.0.10] or [www.naver.com]/hello.jsp
+
+## HTML
+- Hyper Text가 모여있는 것
+- 어떻게 전달?
+	- HTTP 사용
+		1. Connect
+		2. Request : Get방식(주소) / Post방식(Body에 정보를 숨김 -> Login)
+		3. Response
+		4. Close
+
+## Tomcat
 
 - Apache Tomcat -> Tomcat 9 (tar.gz) -> Download (나의 경로는 Downloads에 받았다)-> /Downloads/apache-tomcat-9.0.73/bin -> ./startup.sh(실행) // ./shutdown.sh(종료)
-- Tomcat이란?
+- Tomcat이란? 
+    - 일종의 Program -> Servlet
+    - Java를 실행하게 해주는 S/W
+    - 일종의 Program -> Servlet
     - Servlet Interface(Spac) 구현체
     - Servlet Container 중 하나 
         - 서블릿의 라이프 스타일 관리한다는 뜻
@@ -26,7 +55,8 @@
     - 추상화(Abstraction) : 불필요한 부분 제거 / 복잡성 제거
     - 다형성(Polymorphism) : 다향한 형태를 가지는 것 / 하나의 타입으로 여러 객체를 참조하는 것
     - 캡슐화(Encapsulation) : 객체 내부의 세부 사항을 외부로부터 감추는 것 / 인터페이스만 공개해서 변경하기 쉬운 코드 만드는 것
-    - 상속(Inheritance) : 부모로 부터 물려받는 것
+    - 상속(Inheritance) : 부모로 부터 물려받는 것 -> 확장성(Override)
+    	- class <자식> extends <부모> { } 
 
 - 원칙(SOLID)
     - 단일 책임의 원칙(Single Responsibility Principle) 
@@ -84,3 +114,8 @@
 
 - JVM(Java Virtual Machine) : just in time compiler
 - Source Code < JVM(Java) < 운영체제(Window, Linux, OS) < H/W(Computer)
+
+## Interface
+- 추상 class가 확장성이 떨어지면 사용 : new 사용 x / Instance화 시키지 못하는 것 / Memory에 객체 생성 x
+	> 주차시스템 -> parkable <- 자동차 = extends / 비행기 = implements
+
