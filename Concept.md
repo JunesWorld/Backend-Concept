@@ -134,6 +134,12 @@
 		- [보조Stream] BufferedOutputStream
 	- Char단위(Text)
 		- Reader // Writer
-		- FileReader / BufferedReader // InputTreadReader
+		- FileReader / BufferedReader // InputThreadReader
 
+## Spring
+- 정의 : Java Enterprise 개발을 편하게 해주는 오픈소스 경량급 Application Framework
 
+## Framework
+- S/W를 만드는데 기본이 되는 골격 코드
+- 완전한 Application S/W가 아니기 때문에(반제품) 확장하여 비지니스 요구사항에 맞는 완전한 Application으로 완성이 요구된다. 
+- Framework를 사용해서 모든 플로우를 만들고 필요한 경우(Query 생성) 라이브러리를 사용
