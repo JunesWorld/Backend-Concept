@@ -146,4 +146,14 @@
 
 ## Exception
 - Unchecked Exception : Error
-- Checked Exception : 찐 예외
+- Checked Exception : 찐 예외 -> try~catch 예외 처리
+```
+try {
+...
+} catch(e) {
+	1. 사과
+	2. 로그
+	3. 정상종료
+} finally {
+}
+```
