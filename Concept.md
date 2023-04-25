@@ -157,3 +157,6 @@ try {
 } finally {
 }
 ```
+
+## DataSource(Connection pool)
+- Connection pool : DB에 미리 연결해 놓은 Connection 
