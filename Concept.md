@@ -160,3 +160,4 @@ try {
 
 ## DataSource(Connection pool)
 - Connection pool : DB에 미리 연결해 놓은 Connection 
+- Apache Common DBCP : 가장 유명한 오픈소스 DB Connection pool libarary
