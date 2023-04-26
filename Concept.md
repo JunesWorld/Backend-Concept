@@ -161,3 +161,8 @@ try {
 ## DataSource(Connection pool)
 - Connection pool : DB에 미리 연결해 놓은 Connection 
 - Apache Common DBCP : 가장 유명한 오픈소스 DB Connection pool libarary
+
+## MyBatis(Library) = ORM(Object Relation Mapping) = JPA를 구현한 실체
+- Memory에 있는 객체들을 어떻게 저장할까? -> RDBS / JPA(Java Persistence API) -> 가장 유명한 Library = Hibernate
+- ERD에서 One To Many 관계를 Class에서 어떻게 Mapping
+- @Entity, @OneToMany...
