@@ -162,9 +162,22 @@ try {
 - Connection pool : DB에 미리 연결해 놓은 Connection 
 - Apache Common DBCP : 가장 유명한 오픈소스 DB Connection pool libarary
 
-## MyBatis(Library) = ORM(Object Relation Mapping) = JPA를 구현한 실체
+## MyBatis(Library) = ORM(Object Relation Mapping) = JPA를 구현한 실체 => pom.xml에서 설정
 - Memory에 있는 객체들을 어떻게 저장할까? -> RDBS / JPA(Java Persistence API) -> 가장 유명한 Library = Hibenate
 - JPA -> ERD에서 One To Many 관계를 Class에서 어떻게 Mapping
 	- Object <-> Relation : JPA(Hibenate) 
 	- @Entity, @OneToMany...
 - MyBatis = Object (Relation X) <-> SQL Mapping(Parameter & Result) => Mapper(XML, Interface)
+- Session
+	- Bean 설정 (Datasource, SessionFactory, SessionTemplate)
+	- Session Factory는 DataSource를 주입 받아야 하고 Mapper(XML)로 SQL, Param, Result 바인딩 
+	- session = sf.getSession() -> Session Template은 Session Factory 주입 받아야 한다.
+	1. 연결하기 = session.getConnection
+	2. Transaction 시작
+	3. Statement 준비
+	4. 파라미터 바인딩
+	5. Query 실행 / 처리
+	6. Result 처리
+	7. Transaction 종료
+	8. 연결종료 
+	- Repository는 SessionTemplate 주입 받아야 한다. 
