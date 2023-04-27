@@ -199,4 +199,5 @@ try {
 - Logger(Package 중심) <-> Appender(console & file)
 	- debug -> info -> warn -> error
 	- 개발자 = DEBUG / Release = WARN
-
+- Rollingpolicy
+	- 일정 용량 초과 시 zip 생성 
