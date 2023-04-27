@@ -198,4 +198,5 @@ try {
 	- Slf4J(표준) : 인터페이스 / Logback -> 구현체
 - Logger(Package 중심) <-> Appender(console & file)
 	- debug -> info -> warn -> error
+	- 개발자 = DEBUG / Release = WARN
 
