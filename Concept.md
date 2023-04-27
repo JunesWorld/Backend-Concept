@@ -196,4 +196,6 @@ try {
 		- info / warn / debug / error
 	- Log4J : Application에서 사용하지만 잘 안씀
 	- Slf4J(표준) : 인터페이스 / Logback -> 구현체
+- Logger(Package 중심) <-> Appender(console & file)
+	- debug -> info -> warn -> error
 
