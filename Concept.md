@@ -172,12 +172,28 @@ try {
 	- Bean 설정 (Datasource, SessionFactory, SessionTemplate)
 	- Session Factory는 DataSource를 주입 받아야 하고 Mapper(XML)로 SQL, Param, Result 바인딩 
 	- session = sf.getSession() -> Session Template은 Session Factory 주입 받아야 한다.
-	1. 연결하기 = session.getConnection
-	2. Transaction 시작
-	3. Statement 준비
-	4. 파라미터 바인딩
-	5. Query 실행 / 처리
-	6. Result 처리
-	7. Transaction 종료
-	8. 연결종료 
+		```
+		1. 연결하기 = session.getConnection
+		2. Transaction 시작
+		3. Statement 준비
+		4. 파라미터 바인딩
+		5. Query 실행 / 처리
+		6. Result 처리
+		7. Transaction 종료
+		8. 연결종료 
+		```
 	- Repository는 SessionTemplate 주입 받아야 한다. 
+
+## Logging
+- Non Functional Requirement
+- 하지만,  프로그램 개발 중 디버깅 및 개발완료 후 문제점 추적 및 분석을 위해 필수적으로 갖추어야 할 요구 조건 
+-  로그(Log)는  프로그램 개발이나 운영 시 발생하는 문제점을 추적 하거나  운영 상태를 모니터링 하는 정보
+-  얻을 수 있는 것
+	1. 재현하기 힘든 (테스트 환경이 아닌 개발 완료된 환경에서 발생하는) 버그에 대한 유용한 정보를 제공
+	2. 성능에 관한 통계와 정보를 제공할 수 있다.
+- 종류
+	- Apache 의 (J)arkarta (C)ommons (L)ogging : Library에서 사용하기에 괜찮지만 Application에서는 X
+		- info / warn / debug / error
+	- Log4J : Application에서 사용하지만 잘 안씀
+	- Slf4J(표준) : 인터페이스 / Logback -> 구현체
+
