@@ -201,3 +201,9 @@ try {
 	- 개발자 = DEBUG / Release = WARN
 - Rollingpolicy
 	- 일정 용량 초과 시 zip 생성 
+
+## Interceptor(접근 제어)
+- /mysite03/...(url) -> url 제어해야함
+- filters -> DispatcherServlet -> Interceptors -> Spring Container(Application(Controller1,2,3))
+- Spring Security(Container)는 filters를 사용하지만 사실상 Spring Container안에 있다.
+- Interceptor = Security
