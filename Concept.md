@@ -207,3 +207,5 @@ try {
 - filters -> DispatcherServlet -> Interceptors -> Spring Container(Application(Controller1,2,3))
 - Spring Security(Container)는 filters를 사용하지만 사실상 Spring Container안에 있다.
 - Interceptor = Security
+- Security(보안) = Authentification(인증) + Authorization(권한)
+- 보안 = 인프라(네트워크, 서버, 소프트웨어(인증+권한))
