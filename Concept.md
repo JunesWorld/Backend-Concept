@@ -209,3 +209,8 @@ try {
 - Interceptor = Security
 - Security(보안) = Authentification(인증) + Authorization(권한)
 - 보안 = 인프라(네트워크, 서버, 소프트웨어(인증+권한))
+
+## @Valid
+- Controller에 @Valid annotaion을 사용하면 Vo에서 지정한 annotation 제약 조건
+- Hibernate 제공
+- ex> @NotEmpty, @Length, @RegExp(email정규표현식), @Pattern(regexp=".+@.+\\.[a-z]+")...
